@@ -4,7 +4,7 @@ import { SiMongodb, SiSpringboot } from "react-icons/si";
 
 const About = () => {
   return (
-    <section id="about" className="py-32 max-w-7xl mx-auto px-6 sm:px-16 relative overflow-hidden">
+    <section id="about" className="py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 relative overflow-hidden">
       {/* Background ambient blurs */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/10 blur-[120px] rounded-full pointer-events-none"></div>
 
@@ -25,7 +25,7 @@ const About = () => {
       </motion.div>
 
       {/* Bento Box Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-[240px]">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 auto-rows-min items-start">
         
         {/* Bento Box 1: Profile Photo (Tall) */}
         <motion.div 
@@ -84,7 +84,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 glassmorphism p-8 rounded-[2.5rem] border border-white/10 bg-[#0A0D1C]/80 backdrop-blur-xl flex flex-col justify-between group hover:border-secondary/40 transition-colors duration-500 shadow-2xl overflow-hidden relative"
+          className="col-span-1 md:col-span-1 lg:col-span-1 row-span-1 h-full glassmorphism p-8 rounded-[2.5rem] border border-white/10 bg-[#0A0D1C]/80 backdrop-blur-xl flex flex-col justify-between group hover:border-secondary/40 transition-colors duration-500 shadow-2xl overflow-hidden relative"
         >
           {/* Faint globe grid in background */}
           <div className="absolute -right-10 -bottom-10 text-[200px] text-white/5 group-hover:text-secondary/10 transition-colors duration-500 transform group-hover:rotate-12 pointer-events-none">
@@ -110,7 +110,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 glassmorphism p-8 rounded-[2.5rem] border border-white/10 bg-[#0A0D1C]/80 backdrop-blur-xl flex flex-col justify-center relative overflow-hidden group hover:border-primary/40 transition-colors duration-500 shadow-2xl"
+          className="col-span-1 md:col-span-1 lg:col-span-2 row-span-1 h-full glassmorphism p-8 rounded-[2.5rem] border border-white/10 bg-[#0A0D1C]/80 backdrop-blur-xl flex flex-col justify-between relative overflow-hidden group hover:border-primary/40 transition-colors duration-500 shadow-2xl"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-transparent pointer-events-none"></div>
           

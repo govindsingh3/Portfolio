@@ -60,7 +60,7 @@ const Certifications = () => {
             {/* Holographic Glowing Background Border */}
             <div className={`absolute -inset-0.5 rounded-[2rem] bg-gradient-to-br ${cert.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md`}></div>
             
-            <div className="relative h-full glassmorphism p-8 rounded-[2rem] bg-[#0A0D1C]/90 backdrop-blur-2xl border border-white/10 flex flex-col justify-between overflow-hidden z-10">
+            <div className="relative min-h-[360px] glassmorphism p-8 rounded-[2rem] bg-[#0A0D1C]/90 backdrop-blur-2xl border border-white/10 flex flex-col justify-between overflow-hidden z-10">
               
               {/* Sweeping Glare Effect */}
               <div className="absolute top-0 -left-[100%] group-hover:left-[200%] w-1/2 h-full bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-[25deg] transition-all duration-1000 ease-in-out pointer-events-none z-20"></div>

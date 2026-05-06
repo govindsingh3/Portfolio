@@ -51,30 +51,19 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className={`relative flex items-center justify-between w-full group ${
-                index % 2 === 0 ? "md:flex-row-reverse" : ""
-              }`}
+              className="relative grid gap-10 md:grid-cols-2 md:items-center group"
             >
-              <div className="hidden md:block w-5/12"></div>
-              
               {/* Timeline Icon */}
               <motion.div 
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 transition={{ duration: 0.5 }}
-                className="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-14 h-14 rounded-full bg-[#0A0D1C] border-[3px] border-secondary flex items-center justify-center text-white text-2xl z-10 shadow-[0_0_20px_rgba(56,189,248,0.5)] cursor-pointer"
+                className="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-[#0A0D1C] border-[3px] border-secondary flex items-center justify-center text-white text-2xl z-10 shadow-[0_0_20px_rgba(56,189,248,0.5)] cursor-pointer"
               >
                 {exp.icon}
               </motion.div>
 
               {/* Experience Card */}
-              <div className="ml-24 md:ml-0 w-full md:w-5/12 relative">
-                {/* Arrow Connector */}
-                <div className={`hidden md:block absolute top-6 w-0 h-0 border-y-[12px] border-y-transparent z-10 ${
-                  index % 2 === 0 
-                    ? "right-[100%] border-r-[16px] border-r-white/10" 
-                    : "left-[100%] border-l-[16px] border-l-white/10"
-                }`}></div>
-
+              <div className="w-full md:w-auto relative">
                 {/* The Card */}
                 <div className="glassmorphism p-8 rounded-3xl bg-[#0A0D1C]/80 backdrop-blur-xl border border-white/10 relative overflow-hidden group-hover:border-secondary/50 transition-colors duration-500 shadow-2xl">
                   {/* Subtle hover glow */}

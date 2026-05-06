@@ -40,7 +40,7 @@ const ProjectCard = ({ project, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-10 lg:gap-16 items-center w-full`}
+      className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-10 lg:gap-16 items-stretch w-full`}
     >
       {/* Image Side */}
       <div className="w-full lg:w-[55%] relative group">
@@ -59,7 +59,7 @@ const ProjectCard = ({ project, index }) => {
       </div>
 
       {/* Text Side */}
-      <div className="w-full lg:w-[45%] flex flex-col justify-center relative">
+      <div className="w-full lg:w-[48%] flex flex-col justify-between relative">
         {/* Massive Background Number */}
         <div className="absolute -top-16 lg:-top-24 left-0 text-[120px] lg:text-[180px] font-black text-white/5 select-none -z-10 leading-none" style={{ WebkitTextStroke: "2px rgba(255,255,255,0.05)" }}>
           0{index + 1}
@@ -83,12 +83,12 @@ const ProjectCard = ({ project, index }) => {
           ))}
         </div>
 
-        <div className="flex items-center gap-4 sm:gap-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 w-full">
           <a
             href={project.source_code_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-6 py-3 rounded-full bg-white/10 text-white font-medium hover:bg-white/20 transition-colors border border-white/10 shadow-lg"
+            className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-white/10 text-white font-medium hover:bg-white/20 transition-colors border border-white/10 shadow-lg"
           >
             <FaGithub size={20} />
             Code
@@ -97,7 +97,7 @@ const ProjectCard = ({ project, index }) => {
             href={project.live_link}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+            className="w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)]"
           >
             <FaExternalLinkAlt size={16} />
             Live Preview
@@ -110,7 +110,7 @@ const ProjectCard = ({ project, index }) => {
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-32 max-w-7xl mx-auto px-6 sm:px-16 overflow-hidden">
+    <section id="projects" className="py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}

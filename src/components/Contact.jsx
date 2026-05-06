@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-32 max-w-7xl mx-auto px-6 sm:px-16 relative overflow-hidden">
+    <section id="contact" className="py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 relative overflow-hidden">
       {/* Background ambient blurs */}
       <div className="absolute top-0 right-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-[120px] pointer-events-none"></div>
@@ -133,7 +133,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="group relative w-full sm:w-auto self-end py-4 px-10 rounded-full font-bold text-white overflow-hidden transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(37,99,235,0.6)] hover:-translate-y-1"
+                className="group relative w-full sm:w-auto self-stretch sm:self-end py-4 px-10 rounded-full font-bold text-white overflow-hidden transition-all duration-300 shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(37,99,235,0.6)] hover:-translate-y-1"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-primary via-secondary to-purple-600 transition-transform duration-500 group-hover:scale-110"></div>
                 <div className="relative flex items-center justify-center gap-3">
@@ -151,7 +151,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="flex-[0.6] flex flex-col justify-between"
+          className="lg:basis-[45%] flex flex-col justify-between lg:min-h-[520px]"
         >
           <div className="glassmorphism p-8 sm:p-12 rounded-[2.5rem] bg-gradient-to-br from-primary/10 to-transparent border border-white/10 relative overflow-hidden h-full shadow-2xl">
             <div className="absolute -bottom-24 -right-24 w-64 h-64 bg-secondary/20 blur-[80px] rounded-full"></div>
