@@ -5,15 +5,5 @@
       "src": "package.json",
       "use": "@vercel/static-build"
     }
-  ],
-  "routes": [
-    {
-      "src": "^/(assets|favicon\.svg|icons\.svg|.*\.(css|js|png|jpg|jpeg|svg|webp|json|pdf|txt|xml))$",
-      "dest": "/$1"
-    },
-    {
-      "src": "^/(.*)$",
-      "dest": "/index.html"
-    }
   ]
 }
